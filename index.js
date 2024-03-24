@@ -25,10 +25,6 @@ try{
   console.log(erro);
 }
 
-// db.on('error', console.error.bind(console, 'Erro de conexão com o MongoDB:'));
-// db.once('open', () => {
-//   console.log('Conexão com o MongoDB estabelecida com sucesso.');
-// });
 
 // Definir o esquema dos dados
 const dataSchema = new mongoose.Schema({
