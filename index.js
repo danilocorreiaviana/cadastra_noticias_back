@@ -19,7 +19,7 @@ app.use(cors());
 
 try{
   mongoose.connect(process.env.DB_CONCT);
-  console.log('Conexão com o mongoDB estabelecida com sucesso!', { useNewUrlParser: true, useUnifiedTopology: true })
+  console.log('Conexão com o mongoDB estabelecida com sucesso!')
 }catch(erro){
   console.log('Erro na conexão com o banco :(');
   console.log(erro);
