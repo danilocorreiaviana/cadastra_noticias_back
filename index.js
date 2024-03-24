@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(bodyParser.json());
+app.use(express.json())
 app.use(cors());
 
 // Conectar ao MongoDB
@@ -80,6 +81,6 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/index.html'))
 });
 
-app.listen(3000, () => {
-  console.log(`Server listening on port 3000`);
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
 });
